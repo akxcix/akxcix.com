@@ -1,25 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar } from './lib/components/navbar/Navbar';
+import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { presets } from './lib/themes/presets';
+import { Footer } from './lib/components/footer/Footer';
+import { Spacer } from './lib/components/spacer/Spacer';
+import { Routes } from './lib/routes/Routes';
+import { Helmet } from 'react-helmet';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-function App() {
+const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${props => props.theme.background};
+    margin: 0;
+  }
+`
+const StyledPage = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
+
+const StyledRoutes = styled(Routes)`
+  padding: 0 calc(max(30px, 50% - 800px));
+  background-color: ${props => props.theme.background};
+`;
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <Helmet>
+          <script
+            src="https://kit.fontawesome.com/7a4ff18e5b.js"
+            crossorigin="anonymous">
+          </script>
+        </Helmet>
+        <ThemeProvider theme={presets[1]}>
+          <GlobalStyle />
+          <StyledPage>
+            <Navbar />
+            <StyledRoutes />
+            <Spacer />
+            <Footer />
+          </StyledPage>
+        </ThemeProvider>
+      </Router>
     </div>
-  );
+  )
 }
-
-export default App;
