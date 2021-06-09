@@ -1,11 +1,12 @@
-import { Navbar } from './lib/components/navbar/Navbar';
+import { Navbar } from '../lib/components/navbar/Navbar';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
-import { presets } from './lib/themes/presets';
-import { Footer } from './lib/components/footer/Footer';
-import { Spacer } from './lib/components/spacer/Spacer';
-import { Routes } from './lib/routes/Routes';
+import { presets } from '../lib/themes/presets';
+import { Footer } from '../lib/components/footer/Footer';
+import { Spacer } from '../lib/components/utils/Spacer';
+import { Routes } from '../lib/routes/Routes';
 import { Helmet } from 'react-helmet';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { useSelector } from "react-redux";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -25,6 +26,8 @@ const StyledRoutes = styled(Routes)`
 `;
 
 export function App() {
+  const activeTheme = useSelector((state) => state.activeTheme.value);
+
   return (
     <div>
       <Router>
@@ -34,7 +37,7 @@ export function App() {
             crossorigin="anonymous">
           </script>
         </Helmet>
-        <ThemeProvider theme={presets[1]}>
+        <ThemeProvider theme={presets[activeTheme]}>
           <GlobalStyle />
           <StyledPage>
             <Navbar />

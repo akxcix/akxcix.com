@@ -12,7 +12,7 @@ const StyledIcon = styled(FontAwesomeIcon)`
 
 export function FooterLink(props) {
     return (
-    <StyledLink className={props.className} href={props.href}>
+    <StyledLink className={props.className} href={props.href} aria-label={props.label}>
         <StyledIcon className={props.icon}/>
     </StyledLink>)
 }

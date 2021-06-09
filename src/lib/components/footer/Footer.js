@@ -16,30 +16,37 @@ export function Footer(props) {
                 <FooterLink
                     href="https://www.github.com/iamadarshk"
                     icon="fab fa-github"
+                    label="GitHub"
                 />
                 <FooterLink
                     href="https://twitter.com/_iamadarshk"
                     icon="fab fa-twitter"
+                    label="Twitter"
                 />
                 <FooterLink
                     href="https://instagram.com/_iamadarshk"
                     icon="fab fa-instagram"
+                    label="Instagram"
                 />
                 <FooterLink
                     href="https://linkedin.com/in/iamadarshk"
                     icon="fab fa-linkedin"
+                    label="LinkedIn"
                 />
                 <FooterLink
                     href="https://dev.to/iamadarshk"
                     icon="fab fa-dev"
+                    label="Dev"
                 />
                 <FooterLink
                     href="https://twitch.tv/iamadarshk"
                     icon="fab fa-twitch"
+                    label="Twitch"
                 />
                 <FooterLink
                     href="https://steamcommunity.com/id/iamadarshk"
                     icon="fab fa-steam"
+                    label="Steam"
                 />
                 
             </div>

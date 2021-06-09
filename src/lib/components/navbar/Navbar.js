@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { LogoButton } from './NavLogoButton';
 import { NavButton } from '../buttons/NavButton';
-import { Spacer } from '../spacer/Spacer';
+import { Spacer } from '../utils/Spacer';
+import {ThemeSwitcher} from "../../themes/ThemeSwitcher";
 
 const StyledNav = styled.nav`
     display: flex;
@@ -21,6 +22,7 @@ export function Navbar(props) {
             <Spacer />
             <NavButton href="/" name="Home" />
             <NavButton href="/about" name="About" />
+            <ThemeSwitcher />
         </StyledNav>
     )
 }
