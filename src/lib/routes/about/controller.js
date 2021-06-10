@@ -73,7 +73,7 @@ const getAboutParagraph = () => {
 }
 
 export const fetchAboutPageData = () => {
-    const title = "About | Adarsh Kumar"
+    const title = "About"
     const about = getAboutParagraph();
     const languages = getLanguages();
     const frameworks = getFrameworks();
