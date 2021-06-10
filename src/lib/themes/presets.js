@@ -1,7 +1,7 @@
 export const presets = [
     {
         name: "light",
-        icon: "far fa-sun",
+        icon: "far fa-moon",
         primary: "#6200EE",
         primaryVariant: "#B080F6",
         secondary: "#02A494",
@@ -25,7 +25,7 @@ export const presets = [
     },
     {
         name: "dark",
-        icon: "far fa-moon",
+        icon: "far fa-sun",
         primary: "#BB86FC",
         primaryVariant: "#7A57A4",
         secondary: "#03DAC6",

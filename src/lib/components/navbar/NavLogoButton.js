@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-const StyledLogoButton = styled.a`
+const StyledLogoButton = styled(Link)`
     text-decoration: none;
     display: inline-block;
     color: ${props => props.theme.onSurfaceHigh};
@@ -10,14 +11,14 @@ const StyledLogoButton = styled.a`
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;
-    margin: 5px;
+    margin: 5px; 
 `;
 
 export function LogoButton(props) {
     return (
         <StyledLogoButton
             className={props.className}
-            href="/">Adarsh Kumar
+            to="/">Adarsh Kumar
         </StyledLogoButton>
     )
 }
