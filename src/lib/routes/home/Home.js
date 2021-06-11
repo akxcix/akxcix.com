@@ -20,8 +20,8 @@ export function Home(props) {
                 </title>
             </Helmet>
             <StyledCenteredDiv>
-                <BackgroundH1 text={welcomeText} />
-                <BackgroundH2 text={introText} />
+                <BackgroundH1>{welcomeText}</BackgroundH1>
+                <BackgroundH2>{introText}</BackgroundH2>
             </StyledCenteredDiv>
         </div>
 

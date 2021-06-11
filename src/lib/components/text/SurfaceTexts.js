@@ -9,7 +9,7 @@ export const SurfaceH1 = (props) => {
         <div className={props.className}>
             <StyledDivHigh>
                 <h1>
-                    {props.text}
+                    {props.children}
                 </h1>
             </StyledDivHigh>
         </div>
@@ -21,7 +21,7 @@ export const SurfaceH2 = (props) => {
         <div className={props.className}>
             <StyledDivHigh>
                 <h2>
-                    {props.text}
+                    {props.children}
                 </h2>
             </StyledDivHigh>
         </div>
@@ -33,7 +33,7 @@ export const SurfaceH3 = (props) => {
         <div className={props.className}>
             <StyledDivHigh>
                 <h3>
-                    {props.text}
+                    {props.children}
                 </h3>
             </StyledDivHigh>
         </div>
@@ -44,7 +44,7 @@ export const SurfaceH4 = (props) => {
         <div className={props.className}>
             <StyledDivHigh>
                 <h4>
-                    {props.text}
+                    {props.children}
                 </h4>
             </StyledDivHigh>
         </div>
@@ -56,7 +56,7 @@ export const SurfaceH5 = (props) => {
         <div className={props.className}>
             <StyledDivHigh>
                 <h5>
-                    {props.text}
+                    {props.children}
                 </h5>
             </StyledDivHigh>
         </div>
@@ -68,7 +68,7 @@ export const SurfaceP = (props) => {
         <div className={props.className}>
             <StyledDivHigh>
                 <p>
-                    {props.text}
+                    {props.children}
                 </p>
             </StyledDivHigh>
         </div>

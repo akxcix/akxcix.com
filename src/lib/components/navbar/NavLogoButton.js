@@ -7,7 +7,7 @@ const StyledLogoButton = styled(Link)`
     color: ${props => props.theme.onSurfaceHigh};
     font-size: 22px;
     align-items: center;
-    font-weight: 600;
+    font-weight: 700;
     padding: 10px;
     border-radius: 5px;
     text-decoration: none;

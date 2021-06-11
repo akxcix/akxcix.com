@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import SVG from 'react-inlinesvg';
 import { SurfaceH4, SurfaceP } from "../text/SurfaceTexts";
-import {SVG_WIDTH, SVG_HEIGHT} from "../../../app/constants";
+import { SVG_WIDTH, SVG_HEIGHT } from "../../../app/constants";
 
 const CardPadding = styled.div`
     padding: 30px 40px;
@@ -30,14 +30,14 @@ export const SvgCard = (props) => {
     return (
         <CardPadding className={props.className}>
             <StyledCard>
-                <StyledSvg 
-                    src={props.image}  
+                <StyledSvg
+                    src={props.image}
                     description={props.imageDesc}
                     width={SVG_WIDTH}
                     height={SVG_HEIGHT}
                 />
-                <SurfaceH4 text={props.heading} />
-                <SurfaceP text={props.details} />
+                <SurfaceH4>{props.heading}</SurfaceH4>
+                <SurfaceP>{props.details}</SurfaceP>
             </StyledCard>
         </CardPadding>
     )

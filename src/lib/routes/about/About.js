@@ -29,16 +29,17 @@ export function About(props) {
                 </title>
             </Helmet>
             <StyledJustifiedDiv>
-                <BackgroundH1 text="About" />
-                <BackgroundH2 text={about} />
+                <BackgroundH1>About</BackgroundH1>
+                <BackgroundH2>{about}</BackgroundH2>
                 <br />
 
-                <BackgroundH1 text="Skills" />
+                <BackgroundH1>Skills</BackgroundH1>
 
-                <BackgroundH2 text="Languages" />
+                <BackgroundH2>Languages</BackgroundH2>
                 <CardsFlexbox>
                     {languages.map(language =>
                         <SvgCard
+                            key={language.image}
                             image={language.image}
                             imageDesc={language.imageDesc}
                             heading={language.heading}
@@ -47,10 +48,11 @@ export function About(props) {
                     )}
                 </CardsFlexbox>
 
-                <BackgroundH2 text="Frameworks" />
+                <BackgroundH2>Frameworks</BackgroundH2>
                 <CardsFlexbox>
                     {frameworks.map(framework =>
                         <SvgCard
+                            key={framework.image}
                             image={framework.image}
                             imageDesc={framework.imageDesc}
                             heading={framework.heading}
