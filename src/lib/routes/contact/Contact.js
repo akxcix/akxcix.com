@@ -8,19 +8,6 @@ const StyledCenteredDiv = styled.div`
     background-color: ${props => props.theme.background};
 `;
 
-const CardsFlexbox = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1000px;
-    margin: auto;
-`;
-
-const StyledTextInput = styled.input`
-    padding: 5px;
-    margin: 5px;
-`;
-
 export const Contact = (props) => {
     const email = "contact@iamadarshk.com"
 
