@@ -37,14 +37,14 @@ const routes = [
         href: "/about",
         name: "About",
     },
-    {
-        href: "/resume",
-        name: "Resume",
-    },
-    {
-        href: "/projects",
-        name: "Projects",
-    },
+    // {
+    //     href: "/resume",
+    //     name: "Resume",
+    // },
+    // {
+    //     href: "/projects",
+    //     name: "Projects",
+    // },
     {
         href: "/contact",
         name: "Contact",
