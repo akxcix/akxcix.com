@@ -19,30 +19,30 @@ const gifs = [
         src: "https://i.giphy.com/media/hEc4k5pN17GZq/giphy.webp",
         alt: "confused travolta"
     },
-    {
-        src: "https://i.giphy.com/media/c20UV66B7zCWA/giphy.webp",
-        alt: "confused superman"
-    },
+    // {
+    //     src: "https://i.giphy.com/media/c20UV66B7zCWA/giphy.webp",
+    //     alt: "confused superman"
+    // },
     {
         src: "https://i.giphy.com/media/1oJLpejP9jEvWQlZj4/giphy.webp",
         alt: "visible confusion"
     },
-    {
-        src: "https://i.giphy.com/media/O5BnWhNArl5VwmL3Nu/giphy.webp",
-        alt: "confused fallon"
-    },
-    {
-        src: "https://i.giphy.com/media/gKsJUddjnpPG0/giphy.webp",
-        alt: "confused ryan reynolds"
-    },
-    {
-        src: "https://i.giphy.com/media/l4Epf0KwYUQY5DcGc/giphy.webp",
-        alt: "confused direction pointing"
-    },
-    {
-        src: "https://i.giphy.com/media/gHPn1MdH7PVH3uBUqY/giphy.webp",
-        alt: "confused dude"
-    },
+    // {
+    //     src: "https://i.giphy.com/media/O5BnWhNArl5VwmL3Nu/giphy.webp",
+    //     alt: "confused fallon"
+    // },
+    // {
+    //     src: "https://i.giphy.com/media/gKsJUddjnpPG0/giphy.webp",
+    //     alt: "confused ryan reynolds"
+    // },
+    // {
+    //     src: "https://i.giphy.com/media/l4Epf0KwYUQY5DcGc/giphy.webp",
+    //     alt: "confused direction pointing"
+    // },
+    // {
+    //     src: "https://i.giphy.com/media/gHPn1MdH7PVH3uBUqY/giphy.webp",
+    //     alt: "confused dude"
+    // },
 ];
 
 export function NotFound(props) {
