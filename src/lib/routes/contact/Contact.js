@@ -9,7 +9,7 @@ const StyledCenteredDiv = styled.div`
 `;
 
 export const Contact = (props) => {
-    const email = "contact@iamadarshk.com"
+    const email = "contact@adarshkumar.io"
 
     return (
         <StyledCenteredDiv className={props.className}>
