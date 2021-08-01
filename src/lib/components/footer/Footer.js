@@ -19,12 +19,12 @@ export function Footer(props) {
                     label="GitHub"
                 />
                 <FooterLink
-                    href="https://twitter.com/_iamadarshk"
+                    href="https://twitter.com/adarshxcix"
                     icon="fab fa-twitter"
                     label="Twitter"
                 />
                 <FooterLink
-                    href="https://instagram.com/_iamadarshk"
+                    href="https://www.instagram.com/adarshkumar.99/"
                     icon="fab fa-instagram"
                     label="Instagram"
                 />
@@ -38,7 +38,7 @@ export function Footer(props) {
                     icon="fab fa-dev"
                     label="Dev"
                 />
-                <FooterLink
+                {/* <FooterLink
                     href="https://twitch.tv/iamadarshk"
                     icon="fab fa-twitch"
                     label="Twitch"
@@ -47,7 +47,7 @@ export function Footer(props) {
                     href="https://steamcommunity.com/id/iamadarshk"
                     icon="fab fa-steam"
                     label="Steam"
-                />
+                /> */}
                 
             </div>
             <FooterCopyright />
