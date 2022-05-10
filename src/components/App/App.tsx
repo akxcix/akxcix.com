@@ -21,7 +21,7 @@ function App() {
       <div className="page" style={styles.page as React.CSSProperties}>
         <Navbar/>
         <Home/>
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     </div>
   );

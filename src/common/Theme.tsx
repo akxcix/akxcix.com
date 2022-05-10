@@ -1,13 +1,13 @@
 const Theme = {
     dark: {
-        icon: "far fa-sun",
-        primary: "#BB86FC",
+        icon: "fa-solid fa-moon",
+        primary: "#F1F1F1",
         primaryVariant: "#7A57A4",
-        secondary: "#03DAC6",
-        secondaryVariant: "#03DAC6",
+        secondary: "#BFBDBD",
+        secondaryVariant: "#7F9DFF",
         background: "#121212",
         surface: "#191919",
-        error: "#CF6679",
+        error: "#C44058",
         onPrimaryHigh: "#000000DE",
         onPrimaryMedium: "#00000099",
         onPrimaryDisabled: "#00000061",
