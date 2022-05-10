@@ -6,7 +6,7 @@ import Home from '../Pages/Home/Home';
 
 const styles = {
   body: {
-    backgroundColor: Theme.primary,
+    backgroundColor: Theme.dark.background,
   },
   page: {
     display: "flex",

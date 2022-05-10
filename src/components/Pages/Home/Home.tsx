@@ -3,8 +3,8 @@ import styled, {keyframes} from "styled-components";
 import Theme from "../../../common/Theme";
 
 const Blink = keyframes`
-    0%   { border-bottom-color: ${Theme.green}; }
-    50%  { border-bottom-color: ${Theme.green}; }
+    0%   { border-bottom-color: ${Theme.dark.secondaryVariant}; }
+    50%  { border-bottom-color: ${Theme.dark.secondaryVariant}; }
     51%  { border-bottom-color: transparent; }
     100% { border-bottom-color: transparent; }
 `
@@ -19,14 +19,14 @@ const StyledHome = styled.div`
         transform: translate(-50%, -50%);
         font-size: 12px;
         font-weight: normal;
-        color: ${Theme.white};
+        color: ${Theme.dark.primary};
     }
     h6 span {
-        color: ${Theme.secondary};
+        color: ${Theme.dark.secondary};
     }
     h6 i {
         font-style: normal;
-        border-bottom: 1px solid ${Theme.green};
+        border-bottom: 1px solid ${Theme.dark.secondaryVariant};
         animation: ${Blink} 1s infinite;
     }
 `;
