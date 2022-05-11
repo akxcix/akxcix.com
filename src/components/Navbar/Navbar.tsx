@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Theme from "../../common/Theme";
 import { Button } from "../Buttons/Button";
 
 const StyledNav = styled.div`
@@ -14,6 +13,7 @@ const Navbar = () => {
     return (
         <div className="Navbar">
             <StyledNav>
+                <Button href="https://adarshkumar.io/">{'[Home]'}</Button>
                 <Button href="https://blog.adarshkumar.io">{'[Blog]'}</Button>
                 <Button href="https://adarshkumar.io/experience">{'[Experience]'}</Button>
                 <Button href="https://adarshkumar.io/contact">{'[Contact]'}</Button>
