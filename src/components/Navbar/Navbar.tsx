@@ -1,23 +1,21 @@
-import React from "react";
+import React, {FC} from "react";
 import styled from "styled-components";
 import { Button } from "../Buttons/Button";
+import { Row } from "../Layout/Container/Container";
 
-const StyledNav = styled.div`
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-`;
+interface NavbarProps {
+    className: string,
+}
 
-const Navbar = () => {
+const Navbar: FC<NavbarProps> = ({className}: NavbarProps) => {
     return (
-        <div className="Navbar">
-            <StyledNav>
-                <Button href="https://adarshkumar.io/">{'[Home]'}</Button>
-                <Button href="https://blog.adarshkumar.io">{'[Blog]'}</Button>
-                <Button href="https://adarshkumar.io/experience">{'[Experience]'}</Button>
-                <Button href="https://adarshkumar.io/contact">{'[Contact]'}</Button>
-            </StyledNav>
+        <div className={className}>
+            <Row>
+                <Button className="button-navbar-home" href="https://adarshkumar.io/" text="Home"/>
+                <Button className="button-navbar-blog" href="https://blog.adarshkumar.io" text="Blog"/>
+                <Button className="button-navbar-experience" href="https://adarshkumar.io/experience" text="Experience"/>
+                <Button className="button-navbar-contact" href="https://adarshkumar.io/contact" text="Contact"/>
+            </Row>
         </div>
     )
 }

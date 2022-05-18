@@ -1,6 +1,6 @@
-import React from "react";
+import React, {FC} from "react";
 import styled, {keyframes} from "styled-components";
-import Theme from "../../../common/Theme";
+import Theme from "../../components/Theme/Theme";
 
 const Blink = keyframes`
     0%   { border-bottom-color: ${Theme.dark.secondaryVariant}; }
@@ -31,9 +31,13 @@ const StyledHome = styled.div`
     }
 `;
 
-const Home = () => {
+interface HomeProps {
+    className: string,
+}
+
+const Home: FC<HomeProps> = ({className}: HomeProps) => {
     return (
-        <div className="Home">
+        <div className={className}>
             <StyledHome>
             <h6><span>{'>'}</span> adarsh<span>kumar<i>.</i>io</span></h6>
             </StyledHome>

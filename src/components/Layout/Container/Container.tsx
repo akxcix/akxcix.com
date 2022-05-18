@@ -1,8 +1,15 @@
-import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
+// row flex container
+export const Row = styled.div`
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-`
+    flex-direction: row;
+    justify-content: center;
+`;
+
+// column flex container
+export const Column = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+`;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Theme from "../../common/Theme";
+import Theme from "../Theme/Theme";
 
 export const H1 = styled.p`
     font-family: Menlo, Consolas, monospace;
