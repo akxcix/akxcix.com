@@ -1,8 +1,8 @@
-import react from "react";
+import react, {FC} from "react";
 import styled from "styled-components";
-import Theme from "../../common/Theme";
+import Theme from "../Theme/Theme";
 
-export const Button = styled.a`
+const StyledA = styled.a`
     padding: 5px;
     font-family: Menlo, Consolas, monospace;
     font-size: 12px;
@@ -14,3 +14,17 @@ export const Button = styled.a`
         text-decoration: underline;
     }
 `;
+
+interface ButtonProps {
+    className: string,
+    href: string,
+    text: string,
+}
+
+export const Button: FC<ButtonProps> = ({className, href, text}: ButtonProps) => {
+    return (
+        <div className={className}>
+            <StyledA href={href}>{"[" + text + "]"}</StyledA>
+        </div>
+    )
+}

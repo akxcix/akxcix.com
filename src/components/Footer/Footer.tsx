@@ -1,6 +1,6 @@
-import React from "react";
+import React, {FC} from "react";
 import styled from "styled-components";
-import Theme from "../../common/Theme";
+import Theme from "../Theme/Theme";
 import { Button } from "../Buttons/Button";
 
 const StyledNav = styled.div`
@@ -10,12 +10,16 @@ const StyledNav = styled.div`
     justify-content: center;
 `;
 
-const Navbar = () => {
+interface FooterProps {
+    className: string,
+}
+
+const Navbar: FC<FooterProps> = ({className}: FooterProps) => {
     return (
-        <div className="Navbar">
+        <div className={className}>
             <StyledNav>
-                <Button href="https://twitter.com/adarshXCIX">{'[Twitter]'}</Button>
-                <Button href="https://github.com/iamadarshk">{'[Github]'}</Button>
+                <Button className="button-footer-twitter" href="https://twitter.com/adarshXCIX" text="Twitter"/>
+                <Button className="button-footer-github" href="https://github.com/iamadarshk" text="Github"/>
             </StyledNav>
         </div>
     )
