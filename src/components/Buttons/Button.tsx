@@ -1,12 +1,12 @@
-import {FC} from "react";
+import { FC } from "react";
+import { TEXT_SIZE_P } from "../../commons/constants";
 import styled from "styled-components";
 import { Padding } from "../Layout/Padding/Padding";
 import Theme from "../Theme/Theme";
 
 const StyledA = styled.a`
-    padding: 5px;
     font-family: Menlo, Consolas, monospace;
-    font-size: 16px;
+    font-size: ${TEXT_SIZE_P};
     font-weight: normal;
     color: ${Theme.dark.primary};
     text-decoration: none;

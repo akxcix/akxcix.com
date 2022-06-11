@@ -1,6 +1,10 @@
-import React, {FC} from "react";
-import styled, {keyframes} from "styled-components";
+import { FC } from "react";
+import styled, { keyframes } from "styled-components";
 import Theme from "../../components/Theme/Theme";
+import { 
+    TEXT_SIZE_P, 
+    FONT_FAMILY_MONO 
+} from "../../commons/constants";
 
 const Blink = keyframes`
     0%   { border-bottom-color: ${Theme.dark.secondaryVariant}; }
@@ -11,13 +15,13 @@ const Blink = keyframes`
 
 const StyledHome = styled.div`
     h6 {
-        font-family: Menlo, Consolas, monospace;
+        font-family: ${FONT_FAMILY_MONO};
         position: absolute;
         top: 50%;
         left: 50%;
         margin: 0;
         transform: translate(-50%, -50%);
-        font-size: 16px;
+        font-size: ${TEXT_SIZE_P};
         font-weight: normal;
         color: ${Theme.dark.primary};
     }

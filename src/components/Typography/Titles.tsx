@@ -1,17 +1,22 @@
-import React from "react";
 import styled from "styled-components";
 import Theme from "../Theme/Theme";
+import { 
+    FONT_FAMILY_MONO,
+    FONT_FAMILY, 
+    TEXT_SIZE_H1, 
+    TEXT_SIZE_P 
+} from "../../commons/constants";
 
 export const H1 = styled.p`
-    font-family: Menlo, Consolas, monospace;
-    font-size: 24px;
+    font-family: ${FONT_FAMILY_MONO};
+    font-size: ${TEXT_SIZE_H1};
     font-weight: normal;
     color: ${Theme.dark.primary};
 `;
 
 export const P = styled.p`
-    font-family: Menlo, Consolas;
-    font-size: 12px;
+    font-family: ${FONT_FAMILY};
+    font-size: ${TEXT_SIZE_P};
     font-weight: normal;
     color: ${Theme.dark.primary};
 `;

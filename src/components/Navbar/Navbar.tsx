@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import { FC } from "react";
 import { Button } from "../Buttons/Button";
 import { Row } from "../Layout/Container/Container";
 import { Padding } from "../Layout/Padding/Padding";
@@ -18,7 +18,6 @@ const Navbar: FC<NavbarProps> = ({className}: NavbarProps) => {
                     <Button className="button-navbar-contact" href="https://adarshkumar.io/contact" text="Contact"/>
                 </Row>
             </Padding>
-            
         </div>
     )
 }

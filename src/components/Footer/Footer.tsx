@@ -1,6 +1,5 @@
-import React, {FC} from "react";
+import { FC } from "react";
 import styled from "styled-components";
-import Theme from "../Theme/Theme";
 import { Button } from "../Buttons/Button";
 import { Padding } from "../Layout/Padding/Padding";
 
