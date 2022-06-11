@@ -1,11 +1,12 @@
-import react, {FC} from "react";
+import {FC} from "react";
 import styled from "styled-components";
+import { Padding } from "../Layout/Padding/Padding";
 import Theme from "../Theme/Theme";
 
 const StyledA = styled.a`
     padding: 5px;
     font-family: Menlo, Consolas, monospace;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: normal;
     color: ${Theme.dark.primary};
     text-decoration: none;
@@ -24,7 +25,9 @@ interface ButtonProps {
 export const Button: FC<ButtonProps> = ({className, href, text}: ButtonProps) => {
     return (
         <div className={className}>
-            <StyledA href={href}>{"[" + text + "]"}</StyledA>
+            <Padding className={"a-" + className} margin="5px">
+                <StyledA href={href}>{"[" + text + "]"}</StyledA>
+            </Padding>
         </div>
     )
 }

@@ -17,7 +17,7 @@ const StyledHome = styled.div`
         left: 50%;
         margin: 0;
         transform: translate(-50%, -50%);
-        font-size: 12px;
+        font-size: 16px;
         font-weight: normal;
         color: ${Theme.dark.primary};
     }
@@ -39,7 +39,7 @@ const Home: FC<HomeProps> = ({className}: HomeProps) => {
     return (
         <div className={className}>
             <StyledHome>
-            <h6><span>{'>'}</span> adarsh<span>kumar<i>.</i>io</span></h6>
+                <h6><span>{'>'}</span> adarsh<span>kumar<i>.</i>io</span></h6>
             </StyledHome>
         </div>
     )

@@ -2,9 +2,9 @@ import React, {FC} from "react";
 import styled from "styled-components";
 import Theme from "../Theme/Theme";
 import { Button } from "../Buttons/Button";
+import { Padding } from "../Layout/Padding/Padding";
 
-const StyledNav = styled.div`
-    padding: 10px;
+const StyledDiv = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -17,10 +17,12 @@ interface FooterProps {
 const Navbar: FC<FooterProps> = ({className}: FooterProps) => {
     return (
         <div className={className}>
-            <StyledNav>
-                <Button className="button-footer-twitter" href="https://twitter.com/adarshXCIX" text="Twitter"/>
-                <Button className="button-footer-github" href="https://github.com/iamadarshk" text="Github"/>
-            </StyledNav>
+            <Padding className={className} margin="10px">
+                <StyledDiv>
+                    <Button className="button-footer-twitter" href="https://twitter.com/adarshXCIX" text="Twitter"/>
+                    <Button className="button-footer-github" href="https://github.com/iamadarshk" text="Github"/>
+                </StyledDiv>
+            </Padding>
         </div>
     )
 }
