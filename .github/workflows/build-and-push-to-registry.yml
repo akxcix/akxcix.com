@@ -2,7 +2,7 @@ name: Build and publish manually
 
 env:
   IMAGE: ${{ github.event.repository.name }}
-  IMAGE_VERSION: ${{ env.IMAGE }}:${{github.event.inputs.version }}
+  IMAGE_VERSION: ${{ github.event.repository.name }}:${{github.event.inputs.version }}
 
 on:
   workflow_dispatch:
