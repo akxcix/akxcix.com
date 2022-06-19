@@ -1,0 +1,35 @@
+name: Build and publish manually
+
+env:
+  IMAGE: ${{ github.event.repository.name }}
+  IMAGE_VERSION: ${{ env.IMAGE }}:${{github.event.inputs.version }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Image version'
+        required: true
+
+jobs:
+  build_and_push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repo 
+        uses: actions/checkout@v2
+      - name: Build image 
+        run: docker build -t ${{ env.IMAGE }} .
+      - name: Install doctl 
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DO_ACCESS_TOKEN }}
+      - name: Log in to DO Container Registry 
+        run: doctl registry login --expiry-seconds 600
+      - name: Tag image 
+        run:
+          docker tag ${{ env.IMAGE }} \
+          ${{ secrets.DOCKER_REGISTRY_URL }}/${{ secrets.DOCKER_REGISTRY }}/${{ env.IMAGE_VERSION }}
+      - name: Push image to DO Container Registry 
+        run: 
+          docker push \
+          ${{ secrets.DOCKER_REGISTRY_URL }}/${{ secrets.DOCKER_REGISTRY }}/${{ env.IMAGE_VERSION }}
