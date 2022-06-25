@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { NAVLINKS } from "../../commons/constants";
 import { Button } from "../Buttons/Button";
 import { Row } from "../Layout/Container/Container";
 import { Padding } from "../Layout/Padding/Padding";
@@ -12,10 +13,9 @@ const Navbar: FC<NavbarProps> = ({className}: NavbarProps) => {
         <div className={className}>
             <Padding className={className} margin="10px">
                 <Row>
-                    <Button className="button-navbar-home" href="https://adarshkumar.io/" text="Home"/>
-                    {/* <Button className="button-navbar-blog" href="https://blog.adarshkumar.io" text="Blog"/>
-                    <Button className="button-navbar-experience" href="https://adarshkumar.io/experience" text="Experience"/>
-                    <Button className="button-navbar-contact" href="https://adarshkumar.io/contact" text="Contact"/> */}
+                    {NAVLINKS.map((x, i) => 
+                        <Button className={"button-navbar-"+x.name} href={x.link} text={x.name}/>
+                    )}
                 </Row>
             </Padding>
         </div>
