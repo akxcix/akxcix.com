@@ -3,6 +3,7 @@ import { CONTACT_EMAIL } from "../../commons/constants";
 import { H1, P } from "../../components/Typography/Titles";
 import { Column } from "../../components/Layout/Container/Container";
 import { Button } from "../../components/Buttons/Button";
+import { Helmet } from "react-helmet";
 
 interface ContactProps {
     className: string,
@@ -11,6 +12,9 @@ interface ContactProps {
 const Contact: FC<ContactProps> = ({className}: ContactProps) => {
     return (
         <div className={className}>
+            <Helmet>
+                <title>Contact</title>
+            </Helmet>
             <Column className={"column" + className}>
                 <H1>
                     Contact

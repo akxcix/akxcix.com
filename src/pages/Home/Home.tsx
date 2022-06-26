@@ -5,6 +5,7 @@ import {
     TEXT_SIZE_P, 
     FONT_FAMILY_MONO 
 } from "../../commons/constants";
+import { Helmet } from "react-helmet";
 
 const Blink = keyframes`
     0%   { border-bottom-color: ${Theme.dark.secondaryVariant}; }
@@ -42,6 +43,9 @@ interface HomeProps {
 const Home: FC<HomeProps> = ({className}: HomeProps) => {
     return (
         <div className={className}>
+            <Helmet>
+                <title>Adarsh Kumar</title>
+            </Helmet>
             <StyledHome>
                 <h6><span>{'>'}</span> adarsh<span>kumar<i>.</i>io</span></h6>
             </StyledHome>

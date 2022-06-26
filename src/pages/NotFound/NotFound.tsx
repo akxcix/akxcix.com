@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { NOT_FOUND_GIFS } from "../../commons/constants";
 import { H1, P } from "../../components/Typography/Titles";
 import { Button } from "../../components/Buttons/Button";
+import {Helmet} from "react-helmet";
 
 const StyledCenteredDiv = styled.div`
     text-align: center;
@@ -24,6 +25,9 @@ const NotFound: FC<NotFoundProps> = ({className}: NotFoundProps) => {
 
     return (
         <div className={className}>
+            <Helmet>
+                <title>Not Found</title>
+            </Helmet>
             <StyledCenteredDiv>
                 <H1>404 - Not Found</H1>
                 <StyledImg src={randomGif.src} alt={randomGif.alt} />
