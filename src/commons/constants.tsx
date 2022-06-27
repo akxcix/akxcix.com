@@ -10,8 +10,7 @@ export const FONT_FAMILY_MONO = "Menlo, Consolas, monospace";
 export const FONT_FAMILY = "Menlo, Consolas";
 
 const NAVLINK_HOME = "/";
-// const NAVLINK_BLOG = "https://blog.adarshkumar.io";
-const NAVLINK_BLOG = "https://dev.to/iamadarshk";
+const NAVLINK_BLOG = "https://medium.com/@iamadarshk";
 const NAVLINK_ABOUT = "/about";
 const NAVLINK_EXPERIENCE = "/experience";
 const NAVLINK_CONTACT = "/contact";
