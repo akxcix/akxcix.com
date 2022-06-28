@@ -1,15 +1,13 @@
-name: Build and publish manually
+name: Build and Publish on tag push
+
+on:
+  push:
+    tags:
+      - "*"
 
 env:
   IMAGE: ${{ github.event.repository.name }}
-  IMAGE_VERSION: ${{ github.event.repository.name }}:${{github.event.inputs.version }}
-
-on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'Image version'
-        required: true
+  IMAGE_VERSION: ${{ github.event.repository.name }}:${{github.ref_name }}
 
 jobs:
   build_and_push:
