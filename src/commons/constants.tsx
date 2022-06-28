@@ -19,7 +19,7 @@ export const NAVLINKS = [
     {link: NAVLINK_HOME, name: "Home"},
     {link: NAVLINK_BLOG, name: "Blog"},
     {link: NAVLINK_ABOUT, name: "About"},
-    {link: NAVLINK_EXPERIENCE, name: "Experience"},
+    // {link: NAVLINK_EXPERIENCE, name: "Experience"},
     {link: NAVLINK_CONTACT, name: "Contact"},
 ]
 
