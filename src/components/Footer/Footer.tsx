@@ -1,13 +1,8 @@
 import { FC } from "react";
-import styled from "styled-components";
+import { FOOTER_LINKS } from "../../commons/constants";
 import { Button } from "../Buttons/Button";
+import { Row } from "../Layout/Container/Container";
 import { Padding } from "../Layout/Padding/Padding";
-
-const StyledDiv = styled.div`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-`;
 
 interface FooterProps {
     className: string,
@@ -17,10 +12,11 @@ const Navbar: FC<FooterProps> = ({className}: FooterProps) => {
     return (
         <div className={className}>
             <Padding className={className} margin="10px">
-                <StyledDiv>
-                    <Button className="button-footer-twitter" href="https://twitter.com/adarshXCIX" text="Twitter"/>
-                    <Button className="button-footer-github" href="https://github.com/iamadarshk" text="Github"/>
-                </StyledDiv>
+                <Row>
+                    {FOOTER_LINKS.map((x, i) => 
+                        <Button className={className+"button-footer-"+x.name} href={x.link} text={x.name}/>
+                    )}
+                </Row>
             </Padding>
         </div>
     )

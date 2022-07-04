@@ -9,18 +9,30 @@ export const TEXT_SIZE_P = "14px";
 export const FONT_FAMILY_MONO = "Menlo, Consolas, monospace";
 export const FONT_FAMILY = "Menlo, Consolas";
 
-const NAVLINK_HOME = "/";
-const NAVLINK_BLOG = "https://medium.com/@iamadarshk";
-const NAVLINK_ABOUT = "/about";
-const NAVLINK_EXPERIENCE = "/experience";
-const NAVLINK_CONTACT = "/contact";
+// navlinks
+const LINK_HOME = "/";
+const LINK_BLOG = "https://medium.com/@iamadarshk";
+const LINK_ABOUT = "/about";
+const LINK_EXPERIENCE = "/experience";
+const LINK_CONTACT = "/contact";
 
-export const NAVLINKS = [
-    {link: NAVLINK_HOME, name: "Home"},
-    {link: NAVLINK_BLOG, name: "Blog"},
-    {link: NAVLINK_ABOUT, name: "About"},
-    // {link: NAVLINK_EXPERIENCE, name: "Experience"},
-    {link: NAVLINK_CONTACT, name: "Contact"},
+// footer links
+const LINK_GITHUB = "https://github.com/iamadarshk";
+const LINK_TWITTER = "https://twitter.com/adarshXCIX";
+const LINK_LINKEDIN = "https://linkedin.com/in/iamadarshk";
+
+export const NAV_LINKS = [
+    {link: LINK_HOME, name: "Home"},
+    {link: LINK_BLOG, name: "Blog"},
+    {link: LINK_ABOUT, name: "About"},
+    // {link: LINK_EXPERIENCE, name: "Experience"},
+    {link: LINK_CONTACT, name: "Contact"},
+]
+
+export const FOOTER_LINKS = [
+    {link: LINK_GITHUB, name: "Github"},
+    {link: LINK_LINKEDIN, name: "LinkedIn"},
+    {link: LINK_TWITTER, name: "Twitter"},
 ]
 
 export const NOT_FOUND_GIFS = [
