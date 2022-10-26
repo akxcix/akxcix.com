@@ -17,7 +17,7 @@ const LINK_EXPERIENCE = "/experience";
 const LINK_CONTACT = "/contact";
 
 // footer links
-const LINK_GITHUB = "https://github.com/iamadarshk";
+const LINK_GITHUB = "https://github.com/akxcix";
 const LINK_TWITTER = "https://twitter.com/adarshXCIX";
 const LINK_LINKEDIN = "https://linkedin.com/in/iamadarshk";
 
