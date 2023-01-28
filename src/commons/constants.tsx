@@ -11,7 +11,7 @@ export const FONT_FAMILY = "Menlo, Consolas";
 
 // navlinks
 const LINK_HOME = "/";
-const LINK_BLOG = "https://medium.com/@iamadarshk";
+const LINK_BLOG = "https://medium.com/@akxcix";
 const LINK_ABOUT = "/about";
 const LINK_EXPERIENCE = "/experience";
 const LINK_CONTACT = "/contact";
