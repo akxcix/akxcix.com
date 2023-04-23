@@ -15,6 +15,7 @@ const LINK_BLOG = "https://medium.com/@akxcix";
 const LINK_ABOUT = "/about";
 const LINK_EXPERIENCE = "/experience";
 const LINK_CONTACT = "/contact";
+const LINK_TOXIC = "/toxic"
 
 // footer links
 const LINK_GITHUB = "https://github.com/akxcix";
@@ -22,17 +23,17 @@ const LINK_TWITTER = "https://twitter.com/adarshXCIX";
 const LINK_LINKEDIN = "https://linkedin.com/in/iamadarshk";
 
 export const NAV_LINKS = [
-    {link: LINK_HOME, name: "Home"},
-    {link: LINK_BLOG, name: "Blog"},
-    {link: LINK_ABOUT, name: "About"},
-    // {link: LINK_EXPERIENCE, name: "Experience"},
-    {link: LINK_CONTACT, name: "Contact"},
+    { link: LINK_HOME, name: "Home" },
+    { link: LINK_BLOG, name: "Blog" },
+    { link: LINK_ABOUT, name: "About" },
+    // { link: LINK_TOXIC, name: "Toxic" },
+    { link: LINK_CONTACT, name: "Contact" },
 ]
 
 export const FOOTER_LINKS = [
-    {link: LINK_GITHUB, name: "Github"},
-    {link: LINK_LINKEDIN, name: "LinkedIn"},
-    {link: LINK_TWITTER, name: "Twitter"},
+    { link: LINK_GITHUB, name: "Github" },
+    { link: LINK_LINKEDIN, name: "LinkedIn" },
+    { link: LINK_TWITTER, name: "Twitter" },
 ]
 
 export const NOT_FOUND_GIFS = [
