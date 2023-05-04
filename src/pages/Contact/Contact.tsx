@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { CONTACT_EMAIL } from "../../commons/constants";
+import { CONTACT_EMAIL, TWITTER_DM } from "../../commons/constants";
 import { H1, P } from "../../components/Typography/Titles";
 import { Column } from "../../components/Layout/Container/Container";
 import { Button } from "../../components/Buttons/Button";
@@ -9,7 +9,7 @@ interface ContactProps {
     className: string,
 }
 
-const Contact: FC<ContactProps> = ({className}: ContactProps) => {
+const Contact: FC<ContactProps> = ({ className }: ContactProps) => {
     return (
         <div className={className}>
             <Helmet>
@@ -19,9 +19,10 @@ const Contact: FC<ContactProps> = ({className}: ContactProps) => {
                 <H1>
                     Contact
                 </H1>
-                <br/>
+                <br />
                 <P>
-                    email: <Button className={"button-email"+className} href={"mailto:" + CONTACT_EMAIL} text={CONTACT_EMAIL}/>
+                    <Button className={"button-twitter" + className} href={TWITTER_DM} text="twitter dm" />
+                    <Button className={"button-email" + className} href={"mailto:" + CONTACT_EMAIL} text="email" />
                 </P>
             </Column>
         </div>

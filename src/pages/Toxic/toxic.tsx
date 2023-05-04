@@ -1,8 +1,6 @@
 import { FC } from "react";
-import { CONTACT_EMAIL } from "../../commons/constants";
-import { H1, P } from "../../components/Typography/Titles";
+import { P } from "../../components/Typography/Titles";
 import { Column } from "../../components/Layout/Container/Container";
-import { Button } from "../../components/Buttons/Button";
 import { Helmet } from "react-helmet";
 
 interface ToxicProps {
@@ -16,9 +14,6 @@ const Toxic: FC<ToxicProps> = ({ className }: ToxicProps) => {
                 <title>Toxic</title>
             </Helmet>
             <Column className={"column" + className}>
-                {/* <H1>
-                    Toxic
-                </H1> */}
                 <br />
                 <P>
                     <iframe

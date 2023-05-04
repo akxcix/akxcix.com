@@ -10,30 +10,42 @@ export const FONT_FAMILY_MONO = "Menlo, Consolas, monospace";
 export const FONT_FAMILY = "Menlo, Consolas";
 
 // navlinks
-const LINK_HOME = "/";
-const LINK_BLOG = "https://medium.com/@akxcix";
-const LINK_ABOUT = "/about";
-const LINK_EXPERIENCE = "/experience";
-const LINK_CONTACT = "/contact";
-const LINK_TOXIC = "/toxic"
+export const LINK_HOME = "/";
+export const LINK_BLOG = "https://medium.com/@akxcix";
+export const LINK_ABOUT = "/about";
+export const LINK_EXPERIENCE = "/experience";
+export const LINK_CONTACT = "/contact";
+export const LINK_TOXIC = "/toxic"
+
+// button names
+const BUTTON_NAME_HOME = "home";
+const BUTTON_NAME_BLOG = "blog";
+const BUTTON_NAME_ABOUT = "about";
+const BUTTON_NAME_CONTACT = "contact";
+
+const BUTTON_NAME_GITHUB = "github";
+const BUTTON_NAME_LINKEDIN = "linkedIn";
+const BUTTON_NAME_TWITTER = "twitter";
+const BUTTON_NAME_FLICKR = "flickr";
 
 // footer links
 const LINK_GITHUB = "https://github.com/akxcix";
 const LINK_TWITTER = "https://twitter.com/adarshXCIX";
 const LINK_LINKEDIN = "https://linkedin.com/in/iamadarshk";
+const LINK_FLICKR = "https://www.flickr.com/photos/adarsh_kumar/";
 
 export const NAV_LINKS = [
-    { link: LINK_HOME, name: "Home" },
-    { link: LINK_BLOG, name: "Blog" },
-    { link: LINK_ABOUT, name: "About" },
-    // { link: LINK_TOXIC, name: "Toxic" },
-    { link: LINK_CONTACT, name: "Contact" },
+    { link: LINK_HOME, name: BUTTON_NAME_HOME },
+    { link: LINK_BLOG, name: BUTTON_NAME_BLOG },
+    { link: LINK_ABOUT, name: BUTTON_NAME_ABOUT },
+    { link: LINK_CONTACT, name: BUTTON_NAME_CONTACT },
 ]
 
 export const FOOTER_LINKS = [
-    { link: LINK_GITHUB, name: "Github" },
-    { link: LINK_LINKEDIN, name: "LinkedIn" },
-    { link: LINK_TWITTER, name: "Twitter" },
+    { link: LINK_TWITTER, name: BUTTON_NAME_TWITTER },
+    { link: LINK_FLICKR, name: BUTTON_NAME_FLICKR },
+    { link: LINK_GITHUB, name: BUTTON_NAME_GITHUB },
+    { link: LINK_LINKEDIN, name: BUTTON_NAME_LINKEDIN },
 ]
 
 export const NOT_FOUND_GIFS = [
@@ -43,4 +55,6 @@ export const NOT_FOUND_GIFS = [
     },
 ];
 
+// contact links
 export const CONTACT_EMAIL = "contact@adarshkumar.io";
+export const TWITTER_DM = "https://twitter.com/messages/compose?recipient_id=865915538576482304";
