@@ -22,7 +22,6 @@ const Contact: FC<ContactProps> = ({ className }: ContactProps) => {
                 <br />
                 <P>
                     <Button className={"button-twitter" + className} href={TWITTER_DM} text="twitter dm" />
-                    <Button className={"button-email" + className} href={"mailto:" + CONTACT_EMAIL} text="email" />
                 </P>
             </Column>
         </div>
