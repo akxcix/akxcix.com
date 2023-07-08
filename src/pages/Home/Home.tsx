@@ -1,9 +1,9 @@
 import { FC } from "react";
 import styled, { keyframes } from "styled-components";
 import Theme from "../../components/Theme/Theme";
-import { 
-    TEXT_SIZE_P, 
-    FONT_FAMILY_MONO 
+import {
+    TEXT_SIZE_P,
+    FONT_FAMILY_MONO
 } from "../../commons/constants";
 import { Helmet } from "react-helmet";
 
@@ -40,14 +40,14 @@ interface HomeProps {
     className: string,
 }
 
-const Home: FC<HomeProps> = ({className}: HomeProps) => {
+const Home: FC<HomeProps> = ({ className }: HomeProps) => {
     return (
         <div className={className}>
             <Helmet>
                 <title>Adarsh Kumar</title>
             </Helmet>
             <StyledHome>
-                <h6><span>{'>'}</span> adarsh<span>kumar<i>.</i>io</span></h6>
+                <h6><span>{'>'}</span> akxcix<span><i>.</i>com</span></h6>
             </StyledHome>
         </div>
     )
