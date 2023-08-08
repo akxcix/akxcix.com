@@ -8,13 +8,13 @@ interface NavbarProps {
     className: string,
 }
 
-const Navbar: FC<NavbarProps> = ({className}: NavbarProps) => {
+const Navbar: FC<NavbarProps> = ({ className }: NavbarProps) => {
     return (
         <div className={className}>
             <Padding className={className} margin="10px">
                 <Row>
-                    {NAV_LINKS.map((x, i) => 
-                        <Button className={"button-navbar-"+x.name} href={x.link} text={x.name}/>
+                    {NAV_LINKS.map((x, i) =>
+                        < Button className={"button-navbar-" + x.name} href={x.link} text={x.name} key={i} />
                     )}
                 </Row>
             </Padding>
