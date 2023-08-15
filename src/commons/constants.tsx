@@ -27,8 +27,10 @@ const BUTTON_NAME_GITHUB = "github";
 const BUTTON_NAME_LINKEDIN = "linkedIn";
 const BUTTON_NAME_TWITTER = "twitter";
 const BUTTON_NAME_FLICKR = "flickr";
+const BUTTON_NAME_CALCOM = "cal.com";
 
 // footer links
+const LINK_CALCOM = "https://cal.com/akxcix";
 const LINK_GITHUB = "https://github.com/akxcix";
 const LINK_TWITTER = "https://twitter.com/akxcix_";
 const LINK_LINKEDIN = "https://linkedin.com/in/akxcix";
@@ -43,6 +45,7 @@ export const NAV_LINKS = [
 
 export const FOOTER_LINKS = [
   { link: LINK_TWITTER, name: BUTTON_NAME_TWITTER },
+  { link: LINK_CALCOM, name: BUTTON_NAME_CALCOM },
   { link: LINK_FLICKR, name: BUTTON_NAME_FLICKR },
   { link: LINK_GITHUB, name: BUTTON_NAME_GITHUB },
   { link: LINK_LINKEDIN, name: BUTTON_NAME_LINKEDIN },
