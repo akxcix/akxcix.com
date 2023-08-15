@@ -30,7 +30,7 @@ const BUTTON_NAME_FLICKR = "flickr";
 const BUTTON_NAME_CALCOM = "cal.com";
 
 // footer links
-const LINK_CALCOM = "https://cal.com/akxcix";
+export const LINK_CALCOM = "https://cal.com/akxcix";
 const LINK_GITHUB = "https://github.com/akxcix";
 const LINK_TWITTER = "https://twitter.com/akxcix_";
 const LINK_LINKEDIN = "https://linkedin.com/in/akxcix";
