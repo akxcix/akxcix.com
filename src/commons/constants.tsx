@@ -11,7 +11,7 @@ export const FONT_FAMILY = "Menlo, Consolas";
 
 // navlinks
 export const LINK_HOME = "/";
-export const LINK_BLOG = "https://medium.com/@akxcix";
+export const LINK_BLOG = "https://akxcix.substack.com/";
 export const LINK_ABOUT = "/about";
 export const LINK_EXPERIENCE = "/experience";
 export const LINK_CONTACT = "/contact";
@@ -32,7 +32,7 @@ const BUTTON_NAME_CALCOM = "cal.com";
 // footer links
 export const LINK_CALCOM = "https://cal.com/akxcix";
 const LINK_GITHUB = "https://github.com/akxcix";
-const LINK_TWITTER = "https://twitter.com/akxcix_";
+const LINK_TWITTER = "https://twitter.com/_akxcix";
 const LINK_LINKEDIN = "https://linkedin.com/in/akxcix";
 const LINK_FLICKR = "https://www.flickr.com/photos/adarsh_kumar/";
 
