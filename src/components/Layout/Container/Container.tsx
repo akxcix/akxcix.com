@@ -14,3 +14,11 @@ export const Column = styled.div`
     justify-content: center;
     text-align: center;
 `;
+
+export const ColumnLeftAligned = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+`;
+

@@ -1,7 +1,8 @@
 import { FC } from "react";
 import { H1, P } from "../../components/Typography/Titles";
-import { Column } from "../../components/Layout/Container/Container";
+import { Column, ColumnLeftAligned } from "../../components/Layout/Container/Container";
 import { Helmet } from "react-helmet";
+import { Button } from "../../components/Buttons/Button";
 
 interface AboutProps {
     className: string,
@@ -18,13 +19,24 @@ const About: FC<AboutProps> = ({ className }: AboutProps) => {
                     About
                 </H1>
                 <br />
-                <P>
-                    hey! i am adarsh<br />
-                    &gt; a ramblin' wreck in some latent space<br />
-                    &gt; prev: @flipkart @askfilo<br />
-                    &gt; n&w s4 @_buildspace<br />
-                    &gt; TIET '21
-                </P>
+                <ColumnLeftAligned>
+                    <P>
+                        hey! i am adarsh, but you can also call me "ak"
+                        <br />
+                        <br />
+                        my twitter bio pretty much sums me up:
+                        <ul>
+                            <li>a ramblin' wreck in some latent space</li>
+                            <li>prev: @flipkart @askfilo</li>
+                            <li>n&w s4 @_buildspace</li>
+                            <li>TIET '21</li>
+                            <li>🇮🇳</li>
+                        </ul>
+                        if you're curious to know more or just want to stalk me (lol), check <br />
+                        out the social media links in the footer
+                    </P>
+                </ColumnLeftAligned>
+                
             </Column>
         </div>
     )
