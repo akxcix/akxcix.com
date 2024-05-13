@@ -1,8 +1,7 @@
 import { FC } from "react";
-import { H1, P } from "../../components/Typography/Titles";
-import { Column, ColumnLeftAligned } from "../../components/Layout/Container/Container";
+import { H1, P } from "components/Typography/Titles";
+import { Column, ColumnLeftAligned } from "components/Layout/Container/Container";
 import { Helmet } from "react-helmet";
-import { Button } from "../../components/Buttons/Button";
 
 interface AboutProps {
     className: string,

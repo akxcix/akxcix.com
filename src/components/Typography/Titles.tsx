@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Theme from "../Theme/Theme";
+import Theme from "components/Theme/Theme";
 import {
     FONT_FAMILY_MONO,
     FONT_FAMILY,

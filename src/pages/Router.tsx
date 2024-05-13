@@ -1,10 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Contact from './Contact/Contact';
-import Home from './Home/Home';
-import NotFound from './NotFound/NotFound';
-import Toxic from './Toxic/toxic';
-import { LINK_ABOUT, LINK_CONTACT, LINK_HOME, LINK_TOXIC } from '../commons/constants';
-import About from './About/About';
+import Contact from 'pages/Contact/Contact';
+import Home from 'pages/Home/Home';
+import NotFound from 'pages/NotFound/NotFound';
+import Toxic from 'pages/Toxic/toxic';
+import { LINK_ABOUT, LINK_CONTACT, LINK_HOME, LINK_TOXIC } from 'commons/constants';
+import About from 'pages/About/About';
 
 export const Router = () => {
     return (

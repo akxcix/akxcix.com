@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { LINK_CALCOM, TWITTER_DM } from "../../commons/constants";
-import { H1, P } from "../../components/Typography/Titles";
-import { Column } from "../../components/Layout/Container/Container";
-import { Button } from "../../components/Buttons/Button";
+import { LINK_CALCOM, TWITTER_DM } from "commons/constants";
+import { H1, P } from "components/Typography/Titles";
+import { Column } from "components/Layout/Container/Container";
+import { Button } from "components/Buttons/Button";
 import { Helmet } from "react-helmet";
 
 interface ContactProps {

@@ -1,8 +1,8 @@
 import { FC } from "react";
 import styled from "styled-components";
-import { NOT_FOUND_GIFS } from "../../commons/constants";
-import { H1, P } from "../../components/Typography/Titles";
-import { Button } from "../../components/Buttons/Button";
+import { NOT_FOUND_GIFS } from "commons/constants";
+import { H1, P } from "components/Typography/Titles";
+import { Button } from "components/Buttons/Button";
 import {Helmet} from "react-helmet";
 
 const StyledCenteredDiv = styled.div`

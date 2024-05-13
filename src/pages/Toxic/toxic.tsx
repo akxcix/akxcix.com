@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { P } from "../../components/Typography/Titles";
-import { Column } from "../../components/Layout/Container/Container";
+import { P } from "components/Typography/Titles";
+import { Column } from "components/Layout/Container/Container";
 import { Helmet } from "react-helmet";
 
 interface ToxicProps {

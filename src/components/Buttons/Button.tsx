@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { TEXT_SIZE_P } from "../../commons/constants";
+import { TEXT_SIZE_P } from "commons/constants";
 import styled from "styled-components";
-import { Padding } from "../Layout/Padding/Padding";
-import Theme from "../Theme/Theme";
+import { Padding } from "components/Layout/Padding/Padding";
+import Theme from "components/Theme/Theme";
 
 const StyledA = styled.a`
     font-family: Menlo, Consolas, monospace;

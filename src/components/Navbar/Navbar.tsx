@@ -1,8 +1,8 @@
 import { FC } from "react";
-import { NAV_LINKS } from "../../commons/constants";
-import { Button } from "../Buttons/Button";
-import { Row } from "../Layout/Container/Container";
-import { Padding } from "../Layout/Padding/Padding";
+import { NAV_LINKS } from "commons/constants";
+import { Button } from "components/Buttons/Button";
+import { Row } from "components/Layout/Container/Container";
+import { Padding } from "components/Layout/Padding/Padding";
 
 interface NavbarProps {
     className: string,

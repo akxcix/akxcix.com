@@ -1,9 +1,9 @@
 import React from 'react';
-import Footer from './components/Footer/Footer';
-import Navbar from './components/Navbar/Navbar';
-import Theme from './components/Theme/Theme';
-import { Spacer } from './components/Layout/Spacer/Spacer';
-import { Router } from './pages/Router';
+import Navbar from 'components/Navbar/Navbar';
+import Footer from 'components/Footer/Footer';
+import Theme from 'components/Theme/Theme';
+import { Spacer } from 'components/Layout/Spacer/Spacer';
+import { Router } from 'pages/Router';
 
 const styles = {
   body: {
@@ -14,7 +14,7 @@ const styles = {
     flexDirection: "column",
     height: "100vh",
   }
-}
+};
 
 const App = () => {
   return (
@@ -27,6 +27,6 @@ const App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;

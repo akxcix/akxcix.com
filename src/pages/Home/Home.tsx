@@ -1,10 +1,10 @@
 import { FC } from "react";
 import styled, { keyframes } from "styled-components";
-import Theme from "../../components/Theme/Theme";
+import Theme from "components/Theme/Theme";
 import {
     TEXT_SIZE_P,
     FONT_FAMILY_MONO
-} from "../../commons/constants";
+} from "commons/constants";
 import { Helmet } from "react-helmet";
 
 const Blink = keyframes`
