@@ -16,7 +16,7 @@ export default function ContactPage() {
                     </Link>
                 </li>
             </List>
-            however i am also available on other platforms:
+            however, i am also available on other platforms:
             <List>
                 <li>
                     {"github: "}
@@ -39,7 +39,7 @@ export default function ContactPage() {
                 <li>
                     {"flickr: "}
                     <Link to="https://www.flickr.com/photos/adarsh_kumar/" className="font-semibold hover:underline">
-                        @akxcix
+                        @adarsh_kumar
                     </Link>
                 </li>
                 <li>

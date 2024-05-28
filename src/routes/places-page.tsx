@@ -91,12 +91,6 @@ export default function PlacesPage() {
                         </Link>
                     </li>
                     <li>
-                        {"🇦🇪 "}
-                        <Link to="https://www.google.com/maps/place/sharjah" className="hover:underline">
-                            sharjah
-                        </Link>
-                    </li>
-                    <li>
                         {"🇹🇷 "}
                         <Link to="https://www.google.com/maps/place/kayseri" className="hover:underline">
                             kayseri
@@ -106,6 +100,18 @@ export default function PlacesPage() {
                         {"🇹🇷 "}
                         <Link to="https://www.google.com/maps/place/istanbul" className="hover:underline">
                             istanbul
+                        </Link>
+                    </li>
+                    <li>
+                        {"🇮🇳 "}
+                        <Link to="https://www.google.com/maps/place/puri" className="hover:underline">
+                            puri
+                        </Link>
+                    </li>
+                    <li>
+                        {"🇮🇳 "}
+                        <Link to="https://www.google.com/maps/place/darjeeling" className="hover:underline">
+                            darjeeling
                         </Link>
                     </li>
                     <li>
@@ -136,6 +142,12 @@ export default function PlacesPage() {
                         {"🇮🇳 "}
                         <Link to="https://www.google.com/maps/place/allahabad" className="hover:underline">
                             allahabad
+                        </Link>
+                    </li>
+                    <li>
+                        {"🇮🇳 "}
+                        <Link to="https://www.google.com/maps/place/rourkela" className="hover:underline">
+                            rourkela
                         </Link>
                     </li>
                     <li>
