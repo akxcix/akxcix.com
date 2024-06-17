@@ -4,10 +4,10 @@ export default function ProjectsPage() {
     return (
         <div className="projects-page">
             <H1>
-                {"Projects"}
+                {"projects"}
             </H1>
             <P>
-                {"Some of the recent projects that i have been working on."}
+                {"some of the recent projects that i have been working on."}
             </P>
         </div>
     )
