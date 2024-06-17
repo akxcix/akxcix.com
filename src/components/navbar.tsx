@@ -11,6 +11,10 @@ const headerLinks = [
         link: 'https://akxcix.substack.com/'
     },
     {
+        name: 'projects',
+        link: '/projects'
+    },
+    {
         name: 'contact',
         link: '/contact'
     },
