@@ -12,12 +12,12 @@ export default function Root() {
                 <div className="flex-1 flex flex-col">
                     <div className="flex h-full flex-col md:flex-row">
                         <LeftDiv />
-                        <div className="w-full md:w-2/4">
+                        <div className="w-full md:w-2/4 border-dashed border-l border-r">
                             <div className="p-6">
                                 <Outlet />
                             </div>
                         </div>
-                        <div className="flex flex-col w-full md:w-1/4 border-l">
+                        <div className="flex flex-col w-full md:w-1/4">
                             {/* <div className="p-4">
                                 <GithubRepoWidget />
                             </div> */}
