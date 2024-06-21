@@ -20,12 +20,13 @@ const headerLinks = [
     },
 ];
 
+
 export default function Navbar() {
     return (
         <div id="header">
-            <header className="sticky top-0 flex h-16 items-center gap-4 border-dashed border-b bg-background px-4 md:px-6">
-                <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-                    <Link to="/" className="flex gap-2 text-lg font-semibold md:text-base">
+            <header className="sticky top-0 flex h-16 items-center gap-4 border-dashed border-b bg-background px-4">
+                <nav className="flex flex-row items-center gap-5 text-sm">
+                    <Link to="/" className="flex gap-2 text-base font-semibold">
                         akxcix
                     </Link>
                     {headerLinks.map((link, index) => (

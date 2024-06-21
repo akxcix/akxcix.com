@@ -12,7 +12,7 @@
 
 export default function LeftDiv() {
     return (
-        <div className="flex flex-col w-full md:w-1/4">
+        <div className="flex flex-col w-0 md:w-1/4">
             {/* display substack posts */}
             {/* {posts.map((post, index) => (
                 <div key={index} className="p-4">

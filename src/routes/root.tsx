@@ -17,6 +17,7 @@ export default function Root() {
                                 <Outlet />
                             </div>
                         </div>
+                        <div className="grow" />
                         <div className="flex flex-col w-full md:w-1/4">
                             {/* <div className="p-4">
                                 <GithubRepoWidget />
