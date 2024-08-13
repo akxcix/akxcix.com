@@ -1,4 +1,3 @@
-import Twemoji from "@/components/twemoji";
 import { H1, H3, List, P } from "@/components/ui/typography";
 import { Link } from "react-router-dom";
 
@@ -150,7 +149,7 @@ const placesVisited = [
 
 const flagCard = (flag: string, name: string, link: string) => (
     <li>
-        <Twemoji emoji={flag} /> {" "}
+        {flag}{" "}
         <Link to={link} className="hover:underline">
             {name}
         </Link>
