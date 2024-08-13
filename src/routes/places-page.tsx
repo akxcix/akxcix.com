@@ -33,6 +33,11 @@ const placesLived = [
 const placesVisited = [
     {
         flag: "🇺🇸",
+        name: "boston",
+        link: "https://www.google.com/maps/place/boston"
+    },
+    {
+        flag: "🇺🇸",
         name: "las vegas",
         link: "https://www.google.com/maps/place/las+vegas"
     },
