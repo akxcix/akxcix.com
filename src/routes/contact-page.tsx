@@ -49,11 +49,6 @@ export default function ContactPage() {
                             akumar814@gatech.edu
                         </Link>
                     ]
-                    [
-                        <Link to="mailto:contact@akxcix.com" className="font-semibold hover:underline">
-                            contact@akxcix.com
-                        </Link>
-                    ]
                 </li>
             </List>
             </div>

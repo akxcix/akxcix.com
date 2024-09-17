@@ -52,11 +52,7 @@ export default function AboutPage() {
                     {"."}
                 </P>
                 <P>
-                    {"i am currently based in atlanta, but i have previously lived in few other places"}
-                    <Link to={"/places"} className="hover:underline">
-                        <Muted>{"[8]"}</Muted>
-                    </Link>
-                    {" as well."}
+                    {"i am currently based in atlanta, but i have previously lived in few other places as well."}
                 </P>
             </div>
         </div>
