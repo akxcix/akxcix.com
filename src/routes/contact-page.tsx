@@ -45,8 +45,8 @@ export default function ContactPage() {
                 <li>
                     {"email: "}
                     [
-                        <Link to="mailto:akumar814@gatech.edu" className="font-semibold hover:underline">
-                            akumar814@gatech.edu
+                        <Link to="mailto:adarshkumar@gatech.edu" className="font-semibold hover:underline">
+                            adarshkumar@gatech.edu
                         </Link>
                     ]
                 </li>
